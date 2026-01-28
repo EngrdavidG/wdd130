@@ -33,8 +33,9 @@ header {
 /* Headings */
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
+
 
 /* Navigation and spacing */
 nav, p, section, article {
