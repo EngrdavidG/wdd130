@@ -57,7 +57,7 @@
 
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.682923608649!2d3.4681030733949307!3d6.434757824191549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5b26ce85005%3A0x8dfb4eee37463c1a!2sRahman%20Adeboyejo%20St%2C%20Lekki%20Phase%20I%2C%20Lekki%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1770667671062!5m2!1sen!2sng"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
@@ -67,41 +67,50 @@
             <h2>Send Us a Message</h2>
 
             <form>
+                <!-- NAME -->
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
+                <!-- EMAIL -->
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
+                <!-- MESSAGE PURPOSE -->
                 <fieldset>
                     <legend>Message Purpose</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          required>
                         General Inquiry
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
                         Reservation Question
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="website">
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
                         Website Suggestion
                     </label>
                 </fieldset>
 
+                <!-- MESSAGE -->
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
+                <!-- NEWSLETTER -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
+                <!-- SUBMIT -->
                 <button type="submit">Get in Touch</button>
             </form>
+
         </section>
 
         <!-- EMPLOYEES -->
