@@ -36,7 +36,14 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   padding: 1rem;
+  color: #ffffff;
 }
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 header img {
   width: 120px;
